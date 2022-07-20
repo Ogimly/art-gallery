@@ -1,0 +1,15 @@
+@import '../../../../assets/css/variables';
+
+.selectors-panel {
+  width: $width-aside;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.selectors-panel__separator {
+  margin: 1rem 0 4rem 0;
+  width: 8rem;
+  height: 3px;
+  background-color: $color-gray;
+}

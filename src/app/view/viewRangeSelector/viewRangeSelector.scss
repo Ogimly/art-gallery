@@ -1,0 +1,36 @@
+@import '../../../assets/css/variables';
+
+/**** Custom styles for noUiSlider ****/
+.noUiSlider {
+  height: 8px;
+  margin: 0.5rem 0.8rem 3rem 0.8rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.noUiSlider .noUi-connect {
+  background: $color-active;
+}
+
+.noUiSlider .noUi-handle {
+  height: 18px;
+  width: 18px;
+  top: -6px;
+  right: -9px; /* half the width */
+  border-radius: 9px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.noUiSlider .noUi-handle:before,
+.noUiSlider .noUi-handle:after {
+  display: none;
+}
+
+.noUiSlider .noUi-tooltip {
+  bottom: -200%;
+  font-size: 1.3rem;
+}

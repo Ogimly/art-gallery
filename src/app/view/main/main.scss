@@ -1,0 +1,11 @@
+@import '../../../assets/css/variables';
+
+.main {
+  max-width: $width-container;
+  margin: 0 auto;
+
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+}
