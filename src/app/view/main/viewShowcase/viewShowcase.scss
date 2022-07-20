@@ -1,0 +1,17 @@
+@import '../../../../assets/css/variables';
+
+.showcase-wrapper {
+  width: $width-container - $width-aside;
+}
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.showcase__title {
+  margin-left: 1.6rem;
+
+  font-size: 2rem;
+  font-weight: 400;
+}

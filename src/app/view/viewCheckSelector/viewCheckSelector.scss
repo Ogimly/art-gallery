@@ -1,0 +1,66 @@
+@import '../../../assets/css/variables';
+
+.selector.selector_check {
+  padding-left: 4rem;
+}
+
+.selector_check .selector__title {
+  display: none;
+}
+
+.selector__check {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+
+  &:checked {
+    ~ .selector__label:before {
+      background-color: $color-active;
+      background-image: url('../../../assets/images/check-mark.png');
+      background-position: center center;
+      background-size: 70%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.selector__label {
+  position: relative;
+  font-size: 1.9rem;
+
+  &:hover {
+    text-shadow: $text-shadow;
+
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2rem;
+    width: 2rem;
+
+    border: 2px solid $color-active;
+    border-radius: 50%;
+  }
+}
+
+.selector_favorite,
+.selector_bag {
+  .selector__label {
+    font-size: 1.8rem;
+    letter-spacing: 0;
+  }
+
+  .selector__label:before {
+    border: 2px solid $color-select;
+  }
+
+  .selector__check:checked {
+    ~ .selector__label:before {
+      background-color: $color-select;
+    }
+  }
+}

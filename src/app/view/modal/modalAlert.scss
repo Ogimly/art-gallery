@@ -1,0 +1,55 @@
+@import '../../../assets/css/variables';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $color-blackout;
+  user-select: none;
+}
+
+.modal__text {
+  position: fixed;
+
+  padding: 10rem;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 2rem;
+
+  color: $color-primary;
+  background-color: $color-background;
+
+  background-image: url('//cdn.shopify.com/s/files/1/0125/8122/t/49/assets/headerbg1.png');
+  background-position: 0 0;
+  background-size: 280px 65px;
+  background-repeat: no-repeat;
+}
+
+.button_modal {
+  position: absolute;
+
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+
+  color: $color-darkgray;
+  border: 2px solid $color-darkgray;
+  border-radius: 50%;
+
+  &:hover {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
+}

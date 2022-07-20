@@ -1,0 +1,41 @@
+@import '../../../assets/css/variables';
+
+.selector_search {
+  position: relative;
+  width: 400px;
+
+  .selector__title {
+    font-size: 1.8rem;
+    letter-spacing: 0;
+  }
+}
+
+.search__input {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0;
+  background-color: $color-select;
+  border-bottom: 2px solid $color-select-line;
+  color: white;
+  &::placeholder {
+    color: white;
+  }
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover,
+  &:focus {
+    color: $color-select-line;
+    background-color: white;
+    &::placeholder {
+      color: $color-select-line;
+    }
+  }
+}

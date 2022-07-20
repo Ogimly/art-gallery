@@ -1,0 +1,25 @@
+@import '../../../assets/css/variables';
+
+.selector_fixed .selector__title {
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.selector__item {
+  margin: 0.3rem 0;
+
+  font-size: inherit;
+  font-size: 1.9rem;
+
+  &:hover {
+    text-shadow: $text-shadow;
+
+    cursor: pointer;
+    background-color: $color-active-half;
+  }
+}
+
+.selector__item.active {
+  background-color: $color-active;
+}

@@ -1,0 +1,40 @@
+@import '../../../assets/css/variables';
+
+.header {
+  font-size: 2.5rem;
+
+  .header__description {
+    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: $color-active;
+
+    &:after {
+      content: '';
+      background: url('https://cdn.shopify.com/s/files/1/0125/8122/t/49/assets/paint_top_bar2.png')
+        repeat-x;
+      bottom: -20px;
+      left: 0;
+      height: 20px;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .header__title {
+    position: relative;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+
+    font: 8rem 'Water Brush', cursive;
+    font-weight: 400;
+
+    background-image: url('//cdn.shopify.com/s/files/1/0125/8122/t/49/assets/headerbg1.png'),
+      url('//cdn.shopify.com/s/files/1/0125/8122/t/49/assets/headerbg2.png');
+    background-position: 0 0, right top;
+    background-size: 280px 65px, 433px 140px;
+    background-repeat: no-repeat;
+  }
+}
